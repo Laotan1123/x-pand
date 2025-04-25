@@ -292,7 +292,7 @@ function App() {
           <Layout>
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-24">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554774853-719586f82d77?auto=format&fit=crop&q=80')] bg-cover bg-center">
+              <div className="absolute inset-0 bg-[url('./assets/hero-bg.jpg')] bg-cover bg-center">
                 <div className="absolute inset-0 bg-dark-100/90 backdrop-blur-sm"></div>
               </div>
               
