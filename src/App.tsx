@@ -28,7 +28,7 @@ import TradingBlockchain from './pages/TradingBlockchain';
 import DigitalFinance from './pages/DigitalFinance';
 import TransportLogistics from './pages/TransportLogistics';
 import Manufacturing from './pages/Manufacturing';
-
+    
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -276,7 +276,7 @@ function App() {
   );
 
   return (
-    <Router>
+    <Router basename="/x-pand">
       <Routes>
         <Route path="/faqs" element={<Layout><FAQs /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
