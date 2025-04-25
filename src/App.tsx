@@ -38,15 +38,15 @@ function App() {
       label: "Investment Opportunities",
       href: "#",
       submenu: [
-        { label: "Real Estate", href: "/investments/real-estate" },
-        { label: "Agriculture", href: "/investments/agriculture" },
-        { label: "Trading & Blockchain", href: "/investments/trading-blockchain" },
-        { label: "Digital Finance", href: "/investments/digital-finance" },
-        { label: "Transport & Logistics", href: "/investments/transport" },
-        { label: "Manufacturing", href: "/investments/manufacturing" }
+        { label: "Real Estate", href: "/x-pand/investments/real-estate" },
+        { label: "Agriculture", href: "/x-pand/investments/agriculture" },
+        { label: "Trading & Blockchain", href: "/x-pand/investments/trading-blockchain" },
+        { label: "Digital Finance", href: "/x-pand/investments/digital-finance" },
+        { label: "Transport & Logistics", href: "/x-pand/investments/transport" },
+        { label: "Manufacturing", href: "/x-pand/investments/manufacturing" }
       ]
     },
-    { label: "How It Works", href: "/how-it-works" }
+    { label: "How It Works", href: "/x-pand/how-it-works" }
   ];
 
   const investmentSectors = [
@@ -213,30 +213,30 @@ function App() {
             <div>
               <h3 className="text-white font-semibold mb-4">Investment Sectors</h3>
               <ul className="space-y-2">
-                <li><a href="/investments/real-estate" className="text-gray-400 hover:text-emerald-500">Real Estate</a></li>
-                <li><a href="/investments/agriculture" className="text-gray-400 hover:text-emerald-500">Agriculture</a></li>
-                <li><a href="/investments/trading-blockchain" className="text-gray-400 hover:text-emerald-500">Trading & Blockchain</a></li>
-                <li><a href="/investments/digital-finance" className="text-gray-400 hover:text-emerald-500">Digital Finance</a></li>
-                <li><a href="/investments/transport" className="text-gray-400 hover:text-emerald-500">Transport & Logistics</a></li>
-                <li><a href="/investments/manufacturing" className="text-gray-400 hover:text-emerald-500">Manufacturing</a></li>
+                <li><a href="/x-pand/investments/real-estate" className="text-gray-400 hover:text-emerald-500">Real Estate</a></li>
+                <li><a href="/x-pand/investments/agriculture" className="text-gray-400 hover:text-emerald-500">Agriculture</a></li>
+                <li><a href="/x-pand/investments/trading-blockchain" className="text-gray-400 hover:text-emerald-500">Trading & Blockchain</a></li>
+                <li><a href="/x-pand/investments/digital-finance" className="text-gray-400 hover:text-emerald-500">Digital Finance</a></li>
+                <li><a href="/x-pand/investments/transport" className="text-gray-400 hover:text-emerald-500">Transport & Logistics</a></li>
+                <li><a href="/x-pand/investments/manufacturing" className="text-gray-400 hover:text-emerald-500">Manufacturing</a></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-white font-semibold mb-4">Company</h3>
               <ul className="space-y-2">
-                <li><a href="/about" className="text-gray-400 hover:text-emerald-500">About Us</a></li>
-                <li><a href="/how-it-works" className="text-gray-400 hover:text-emerald-500">How It Works</a></li>
-                <li><a href="/partners" className="text-gray-400 hover:text-emerald-500">Partners</a></li>
-                <li><a href="/contact" className="text-gray-400 hover:text-emerald-500">Contact Us</a></li>
+                <li><a href="/x-pand/about" className="text-gray-400 hover:text-emerald-500">About Us</a></li>
+                <li><a href="/x-pand/how-it-works" className="text-gray-400 hover:text-emerald-500">How It Works</a></li>
+                <li><a href="/x-pand/partners" className="text-gray-400 hover:text-emerald-500">Partners</a></li>
+                <li><a href="/x-pand/contact" className="text-gray-400 hover:text-emerald-500">Contact Us</a></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-white font-semibold mb-4">Resources</h3>
               <ul className="space-y-2">
-                <li><a href="/learn" className="text-gray-400 hover:text-emerald-500">Learn</a></li>
-                <li><a href="/faqs" className="text-gray-400 hover:text-emerald-500 flex items-center gap-2">
+                <li><a href="/x-pand/learn" className="text-gray-400 hover:text-emerald-500">Learn</a></li>
+                <li><a href="/x-pand/faqs" className="text-gray-400 hover:text-emerald-500 flex items-center gap-2">
                   FAQs
                   <HelpCircle className="h-4 w-4" />
                 </a></li>
