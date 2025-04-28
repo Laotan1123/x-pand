@@ -28,7 +28,7 @@ import TradingBlockchain from './pages/TradingBlockchain';
 import DigitalFinance from './pages/DigitalFinance';
 import TransportLogistics from './pages/TransportLogistics';
 import Manufacturing from './pages/Manufacturing';
-    
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -65,6 +65,13 @@ function App() {
       color: "emerald"
     },
     {
+      icon: Truck,
+      title: "Transport & Logistics",
+      description: "Fleet management opportunities with 10-18% yearly returns.",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
+      color: "emerald"
+    },
+    {
       icon: Bitcoin,
       title: "Trading & Blockchain",
       description: "AI-powered trading solutions with 15-25% projected returns.",
@@ -78,14 +85,7 @@ function App() {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
       color: "gold"
     },
-    {
-      icon: Truck,
-      title: "Transport & Logistics",
-      description: "Fleet management opportunities with 10-18% yearly returns.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
-      color: "emerald"
-    },
-    {
+     {
       icon: Factory,
       title: "Manufacturing",
       description: "Local production ventures projecting 12-22% annual ROI.",
@@ -199,8 +199,8 @@ function App() {
       {/* Footer */}
       <footer className="bg-dark-200 border-t border-dark-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-8">
+            <div className="md:col-span-1">
               <div className="flex items-center mb-6">
                 <Briefcase className="h-8 w-8 text-emerald-500" />
                 <span className="ml-2 text-2xl font-display font-bold text-white">X-pand</span>
@@ -210,7 +210,7 @@ function App() {
               </p>
             </div>
             
-            <div>
+            <div className="md:col-span-1">
               <h3 className="text-white font-semibold mb-4">Investment Sectors</h3>
               <ul className="space-y-2">
                 <li><a href="/x-pand/investments/real-estate" className="text-gray-400 hover:text-emerald-500">Real Estate</a></li>
@@ -222,7 +222,7 @@ function App() {
               </ul>
             </div>
             
-            <div>
+            <div className="md:col-span-1">
               <h3 className="text-white font-semibold mb-4">Company</h3>
               <ul className="space-y-2">
                 <li><a href="/x-pand/about" className="text-gray-400 hover:text-emerald-500">About Us</a></li>
@@ -232,7 +232,7 @@ function App() {
               </ul>
             </div>
             
-            <div>
+            <div className="md:col-span-1">
               <h3 className="text-white font-semibold mb-4">Resources</h3>
               <ul className="space-y-2">
                 <li><a href="/x-pand/learn" className="text-gray-400 hover:text-emerald-500">Learn</a></li>
@@ -276,23 +276,23 @@ function App() {
   );
 
   return (
-    <Router basename="/x-pand">
+    <Router>
       <Routes>
-        <Route path="/faqs" element={<Layout><FAQs /></Layout>} />
-        <Route path="/about" element={<Layout><About /></Layout>} />
-        <Route path="/how-it-works" element={<Layout><HowItWorks /></Layout>} />
-        <Route path="/learn" element={<Layout><Learn /></Layout>} />
-        <Route path="/investments/real-estate" element={<Layout><RealEstate /></Layout>} />
-        <Route path="/investments/agriculture" element={<Layout><Agriculture /></Layout>} />
-        <Route path="/investments/trading-blockchain" element={<Layout><TradingBlockchain /></Layout>} />
-        <Route path="/investments/digital-finance" element={<Layout><DigitalFinance /></Layout>} />
-        <Route path="/investments/transport" element={<Layout><TransportLogistics /></Layout>} />
-        <Route path="/investments/manufacturing" element={<Layout><Manufacturing /></Layout>} />
-        <Route path="/" element={
+        <Route path="/x-pand/faqs" element={<Layout><FAQs /></Layout>} />
+        <Route path="/x-pand/about" element={<Layout><About /></Layout>} />
+        <Route path="/x-pand/how-it-works" element={<Layout><HowItWorks /></Layout>} />
+        <Route path="/x-pand/learn" element={<Layout><Learn /></Layout>} />
+        <Route path="/x-pand/investments/real-estate" element={<Layout><RealEstate /></Layout>} />
+        <Route path="/x-pand/investments/agriculture" element={<Layout><Agriculture /></Layout>} />
+        <Route path="/x-pand/investments/trading-blockchain" element={<Layout><TradingBlockchain /></Layout>} />
+        <Route path="/x-pand/investments/digital-finance" element={<Layout><DigitalFinance /></Layout>} />
+        <Route path="/x-pand/investments/transport" element={<Layout><TransportLogistics /></Layout>} />
+        <Route path="/x-pand/investments/manufacturing" element={<Layout><Manufacturing /></Layout>} />
+        <Route path="/x-pand/" element={
           <Layout>
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-24">
-              <div className="absolute inset-0 bg-[url('./assets/hero-bg.jpg')] bg-cover bg-center">
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554774853-719586f82d77?auto=format&fit=crop&q=80')] bg-cover bg-center">
                 <div className="absolute inset-0 bg-dark-100/90 backdrop-blur-sm"></div>
               </div>
               
