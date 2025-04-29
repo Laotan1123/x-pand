@@ -342,7 +342,7 @@ function App() {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="card group"
+                      className={`card group ${sector.color === 'gold' ? 'hover:border-gold-500' : 'hover:border-emerald-500'}`}
                     >
                       <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                         <img 
@@ -352,10 +352,10 @@ function App() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-dark-100 to-transparent"></div>
                       </div>
-                      <sector.icon className={`h-12 w-12 text-${sector.color}-500 mb-4`} />
+                      <sector.icon className={`h-12 w-12 ${sector.color === 'gold' ? 'text-gold-500' : 'text-emerald-500'} mb-4`} />
                       <h3 className="text-xl font-semibold mb-2 text-white">{sector.title}</h3>
                       <p className="text-gray-400">{sector.description}</p>
-                      <button className="mt-6 text-emerald-500 font-semibold flex items-center group-hover:text-emerald-400">
+                      <button className={`mt-6 font-semibold flex items-center ${sector.color === 'gold' ? 'text-gold-500 group-hover:text-gold-400' : 'text-emerald-500 group-hover:text-emerald-400'}`}>
                         Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-2" />
                       </button>
                     </motion.div>
@@ -395,13 +395,14 @@ function App() {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="card text-center"
+                      className="card text-center group hover:border-gold-500"
                     >
-                      <feature.icon className="h-12 w-12 text-gold-500 mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
+                      <feature.icon className="h-12 w-12 text-gold-500 mx-auto mb-4 group-hover:text-gold-400 transition-colors" />
+                      <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-gold-500 transition-colors">{feature.title}</h3>
                       <p className="text-gray-400">{feature.description}</p>
                     </motion.div>
-                  ))}
+                  ))
+                  }
                 </div>
               </div>
             </section>
