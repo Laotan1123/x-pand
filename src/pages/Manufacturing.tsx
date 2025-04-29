@@ -95,7 +95,7 @@ const Manufacturing = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card group"
+              className="card group hover:border-gold-500"
             >
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                 <img 
@@ -172,7 +172,7 @@ const Manufacturing = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card"
+                className="card hover:border-gold-500"
               >
                 <h3 className="text-xl font-semibold text-white mb-2">{benefit.title}</h3>
                 <p className="text-gray-400 mb-4">{benefit.description}</p>
@@ -193,7 +193,7 @@ const Manufacturing = () => {
           <p className="text-gray-400 text-lg mb-8">
             Join the industrial revolution with unparalleled incentives and support
           </p>
-          <button className="btn-primary">
+          <button className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
             Explore Opportunities
           </button>
         </motion.div>

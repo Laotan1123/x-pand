@@ -135,10 +135,10 @@ const Learn = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card text-center"
+                className={`card text-center hover:border-${resource.color}-500 group`}
               >
-                <resource.icon className={`h-12 w-12 text-${resource.color}-500 mx-auto mb-4`} />
-                <h3 className="text-xl font-semibold text-white mb-2">{resource.title}</h3>
+                <resource.icon className={`h-12 w-12 text-${resource.color}-500 mx-auto mb-4 group-hover:text-${resource.color}-400`} />
+                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-${resource.color}-500">{resource.title}</h3>
                 <p className="text-gray-400">{resource.description}</p>
               </motion.div>
             ))}

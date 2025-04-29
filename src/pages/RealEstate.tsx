@@ -99,7 +99,7 @@ const RealEstate = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card group"
+              className="card group hover:border-emerald-500"
             >
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                 <img 
@@ -180,7 +180,7 @@ const RealEstate = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card"
+                className="card hover:border-emerald-500"
               >
                 <h3 className="text-xl font-semibold text-white mb-4">{model.title}</h3>
                 <p className="text-gray-400">{model.description}</p>

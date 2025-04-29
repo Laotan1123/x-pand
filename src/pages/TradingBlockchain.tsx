@@ -95,7 +95,7 @@ const TradingBlockchain = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card group"
+              className="card group hover:border-gold-500"
             >
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                 <img 
@@ -118,7 +118,7 @@ const TradingBlockchain = () => {
                   </div>
                 ))}
               </div>
-              <button className="text-gold-500 font-semibold flex items-center group-hover:text-gold-400">
+              <button className="text-gold-500 font-semibold flex items-center group-hover:text-gold-400 transition-colors">
                 Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-2" />
               </button>
             </motion.div>
@@ -177,7 +177,7 @@ const TradingBlockchain = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card"
+                className="card hover:border-gold-500"
               >
                 <h3 className="text-xl font-semibold text-white mb-2">{metric.title}</h3>
                 <p className="text-4xl font-bold text-gold-500 mb-2">{metric.metric}</p>
@@ -198,7 +198,7 @@ const TradingBlockchain = () => {
           <p className="text-gray-400 text-lg mb-8">
             Join successful traders leveraging our institutional-grade strategies
           </p>
-          <button className="btn-primary">
+          <button className="btn-primary bg-gold-500 hover:bg-gold-600">
             Open Trading Account
           </button>
         </motion.div>

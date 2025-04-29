@@ -102,7 +102,7 @@ const Agriculture = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card group"
+              className="card group hover:border-emerald-500"
             >
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                 <img 

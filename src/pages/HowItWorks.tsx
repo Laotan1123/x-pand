@@ -125,7 +125,7 @@ const HowItWorks = () => {
           className="text-center mt-24"
         >
           <h2 className="text-3xl font-bold text-white mb-6">Ready to Start Investing?</h2>
-          <button className="btn-primary">
+          <button className="btn-primary hover:bg-gold-600 bg-gold-500 hover:border-gold-600">
             Get Started Now
           </button>
         </motion.div>

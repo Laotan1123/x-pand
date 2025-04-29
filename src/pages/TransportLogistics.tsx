@@ -95,7 +95,7 @@ const TransportLogistics = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card group"
+              className="card group hover:border-gold-500"
             >
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                 <img 
@@ -106,19 +106,19 @@ const TransportLogistics = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-100 to-transparent"></div>
               </div>
               <div className="flex items-center gap-3 mb-4">
-                <project.icon className="h-6 w-6 text-emerald-500" />
+                <project.icon className="h-6 w-6 text-gold-500" />
                 <h3 className="text-xl font-semibold text-white">{project.title}</h3>
               </div>
               <p className="text-gray-400 mb-6">{project.description}</p>
               <div className="space-y-3 mb-6">
                 {project.metrics.map((metric, mIndex) => (
                   <div key={mIndex} className="flex items-center text-gray-400">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mr-2"></span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-2"></span>
                     {metric}
                   </div>
                 ))}
               </div>
-              <button className="text-emerald-500 font-semibold flex items-center group-hover:text-emerald-400">
+              <button className="text-gold-500 font-semibold flex items-center group-hover:text-gold-400">
                 View Details <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-2" />
               </button>
             </motion.div>
@@ -143,7 +143,7 @@ const TransportLogistics = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <feature.icon className="h-8 w-8 text-emerald-500 mx-auto mb-4" />
+                <feature.icon className="h-8 w-8 text-gold-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
                 <p className="text-gray-400 text-sm">{feature.description}</p>
               </motion.div>
@@ -172,11 +172,11 @@ const TransportLogistics = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card"
+                className="card hover:border-gold-500 transition-colors duration-300"
               >
-                <h3 className="text-xl font-semibold text-white mb-2">{tech.title}</h3>
+                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-gold-500 transition-colors duration-300">{tech.title}</h3>
                 <p className="text-gray-400 mb-4">{tech.description}</p>
-                <p className="text-emerald-500 font-bold text-2xl">{tech.metric}</p>
+                <p className="text-gold-500 font-bold text-2xl">{tech.metric}</p>
               </motion.div>
             ))}
           </div>
